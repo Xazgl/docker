@@ -1,0 +1,1713 @@
+
+
+
+body {
+   /* Sticky footer */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.main {
+    display:inline-flex;
+    background: black;
+    height: 70px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+    background-color: rgba(48, 54, 58, 1);
+    font-size: 20px;
+}
+
+
+.main_margin {
+    display:inline-flex;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+    margin-left: 30px;
+}
+
+
+.first-colum {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-height: inherit;
+
+}
+
+.logo-left {
+    max-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size:23px;
+    justify-content: flex-start;
+
+}
+
+.space {
+    width: 30px;
+}
+
+.spaceJ{
+    height: 70%;
+    border-color: black;
+    border-style: groove;
+    border-width: 0.0012px;
+    background:  rgba(48, 54, 58, 1);
+}
+
+.logo-right {
+    max-height: inherit;
+    margin: 0;
+    padding:0px;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
+    justify-content: flex-start;
+    margin-left: 10px;
+    color: #c5bbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+
+.second-colum {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-height: inherit;
+    margin-left: 120px;
+}
+.mainModel {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5bbbb;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50px;
+    font-weight: 300;
+
+
+}
+
+
+.three-colum {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-height: inherit;
+    margin-left: 500px;
+}
+
+
+.four-colum {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-height: inherit;
+    margin-left: 50px;
+}
+
+.btn-main {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    border:solid;
+    border-width: 1px;
+    border-color:#c78e66;
+    transition: transform.3s ;
+    color: #e1d9d9;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.btn-main:hover {
+    background-color: #c78e66;
+    font-size: 20px;
+    padding: 10px;
+    border-width: 1px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+.columnMiniMain {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(48, 54, 58, 1);
+    padding: 10px;
+}
+
+.rowMiniMain  {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+/***************************
+****************************
+Второе меню гамбургер */
+
+
+
+.navbar {
+    background-color: rgba(48, 54, 58, 1);
+    padding-right: 10px;
+    display:none;
+}
+
+
+
+#nav-item {
+    margin-left: 25px;
+    border: none;
+}
+
+
+#nav-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color:#c5bbbb;
+}
+
+
+
+
+/***************************
+****************************
+Контент
+****************************
+***************************/
+
+.mainVideo {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    background-size: cover;
+}
+
+/***************************
+****************************
+Контент карточек
+****************************
+***************************/
+.twoModel {
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+}
+
+.ColumCard {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-height: inherit;
+
+}
+
+.titleCard {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.miniTitleCard {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #65656c;
+    font-weight: 100;
+}
+
+.carImg {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    background-image:url('/images/models_vx.webp');
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.carImg1 {
+    display: flex;
+    width: 600px;
+    height: 250px;
+    background-image: url('/images/models_txl.webp');
+    background-size: contain;
+    background-repeat: no-repeat
+}
+.twoROW {
+    display: flex;
+    flex-direction: row;
+}
+.ColumCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.inColum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.inColum1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+
+.row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.row1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #65656c;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+}
+
+.twoColumCard {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.btnCard {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    border:none;
+    transition: transform.3s ;
+    color: #ffffff;
+
+    background-color: #48484d;
+    width: 220px;
+    height: 50px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+
+
+.btn:hover {
+    background-color: #c78e66;
+    font-size: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 30px;
+}
+
+
+
+/***************************
+****************************
+контент изображения
+****************************
+***************************/
+
+.twoModel2 {
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-around;
+
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    height: 1000px;
+    background-image:url('/images/exceedCont.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+
+.row5 {
+    display: flex;
+    justify-content:  space-evenly;
+    width: 960px;
+    height: 1000px;
+    background-color: rgba(48, 54, 58, 1);
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.row6 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+.p4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #c5bbbb;
+
+}
+
+.p5 {
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size: 45px;
+
+}
+
+
+mini {
+    max-width: 100%;
+    display: flex;
+
+}
+
+
+
+.row8 {
+    display: flex;
+    justify-content:  space-evenly;
+    width: 960px;
+    height: 1000px;
+    background-color: lavender;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    height: 1000px;
+}
+
+
+.p7 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: 300;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border-bottom: solid ;
+    border-width: thin;
+    border-image: linear-gradient(to right, #c78e66, #c78e66,#272c2c,  #030303 ) 47% 0%
+}
+
+
+.mini1 {
+    max-width: 100%;
+
+    padding: 20px;
+}
+#miniTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: black;
+    font-weight: 300;
+
+}
+
+#rightIMG {
+    background-repeat: no-repeat;
+    background-image: url('/images/rigth.webp');
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 1000px;
+
+}
+/**************************
+****************************
+Тест флекс
+****************************
+***************************/
+.containerWithiTwoRow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    margin-top: 70px;
+}
+
+.columCAR {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    height: 90%;
+    font-weight: 400;
+}
+
+.columCAR2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    background-image: url('/images/rigth.webp');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -moz-background-size: contain;
+    background-size: cover;
+    padding: 90px;
+    font-weight: 400;
+}
+
+#li2 {
+    margin-top: 60px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+li {
+    color:black;
+    font-size: 18px;
+}
+
+#left_Carcolumn {
+    background-color: rgb(235, 235, 236);
+
+    color:white;
+    padding: 90px;
+    font-size: 20px
+}
+
+.rowInColumn {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/**************************
+****************************
+карта
+****************************
+***************************/
+.footer1 {
+    /* Sticky footer */
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background:linear-gradient(45deg,#c78e66,rgba(48, 54, 58, 1), #2c2b2b);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
+    justify-content: space-around;;
+}
+
+.mapName {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(45deg, rgb(245, 243, 243), #806f6f, #aba6a2);
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-weight: 400;
+
+}
+
+
+.myMap {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    justify-content: center;
+}
+/**************************
+****************************
+Тест - драйв
+****************************
+***************************/
+
+.testDrive {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image:url('/images/testDrive2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color:white;
+    font-size: 70px;
+    margin-top: 60px;
+
+}
+
+
+.btn2 {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    border-style:groove;
+    border-width:thin;
+    border-color:white ;
+    transition: transform.3s ;
+    color: #ffffff;
+    background-color: rgba(72, 72, 77, 0);
+    width: 300px;
+    height: 50px;
+    font-size: 35px;
+    padding: 0px;
+    font-weight: 100;
+
+}
+
+
+
+.btn2:hover {
+    background-color: #c78e66;
+    font-size: 35px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+/***************************
+новости
+****************************
+***************************/
+.news {
+    display: flex;
+    width: 100%;
+    height:  400px;;
+    flex-shrink: 0;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    background-color: white;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.Card3 {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width:90%
+}
+
+.newsCard {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+}
+
+#card1{
+    background-image: url('/images/card1.webp');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    background-size:cover;
+
+}
+
+#card2{
+    background-image: url('/images/card2.webp');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    background-size:cover;
+}
+
+#card3{
+    background-image: url('/images/card3.webp');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+
+
+#Title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: black;
+    margin-top: 80px;
+
+}
+
+.pCard {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*
+.gallery {
+    display: flex;
+    /* flex-wrap: wrap;
+    padding: 0 4px;
+  }*/
+
+/***************************
+Галерея модальное окно
+****************************
+***************************/
+.disable-scroll {
+    overflow: hidden;
+}
+
+
+.modalGallery
+{
+    display:none;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(0,0,0, 0.5);
+    align-items: center;
+}
+
+.modalGallery_show {
+    animation:modalBackground-open.5s ;
+    display: flex;
+}
+
+.modalGallery_close-starting {
+    animation:modalBackground-close.5s ;
+}
+
+.modalWindow2 {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 800px;
+    flex-direction: column;
+    background-image: url('/images/card1.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.active, .accordion:hover {
+    color:#c78e66;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+/***************************
+Галерея
+****************************
+***************************/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: black;
+}
+
+.columnGallery {
+  display:flex;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: space-evenly;
+}
+
+.columnGallery:hover{
+    transform: scale(1.01);
+}
+
+
+.columnGallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 70%;
+  }
+
+
+
+.active, .accordion:hover {
+    color:#c78e66;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+
+/***************************
+Галерея 2
+****************************
+***************************/
+
+
+
+.image__wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+}
+
+/* картинка на странице */
+.minimized {
+    width: 300px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.minimized:hover {
+    transform:scale(1.01);
+
+}
+/* увеличенная картинка */
+#magnify {
+    display: none;
+    /* position: absolute; upd: 24.10.2016 */
+    position: fixed;
+    max-width: 600px;
+    height: auto;
+    z-index: 9999;
+}
+#magnify img {
+    width: 100%;
+}
+/* затемняющий фон */
+#overlay {
+    display: none;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 9990;
+}
+
+
+
+#close-popup:hover {
+    animation: rota 4s infinite normal;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/***************************
+Подвал
+****************************
+***************************/
+.footer {
+    /* Sticky footer */
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background:linear-gradient(45deg, black,#c78e66);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.footerIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-words {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+#footerRightWords{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.spaceJ-footer{
+    height: 50px;
+    border-color: black;
+    border-style: groove;
+    border-width: 0.0012px;
+    background:  rgba(48, 54, 58, 1);
+}
+
+.footerLi {
+    color:white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+/***************************
+Icon footer
+****************************
+***************************/
+
+.btnICon {
+    font-size: 25px;
+    color:black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btnICon:hover {
+    color:wheat;
+}
+
+
+/***************************
+****************************
+карта
+****************************
+***************************/
+h3{
+    font-size: 25px;
+    font-family:Montserrat,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    text-align: center;
+
+
+}
+.map {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width:auto;
+    height: 300px;
+    padding: 0;
+    margin-top: 400px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.href {
+    text-decoration: none;
+    color: white;
+}
+.href:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/***************************
+****************************
+Адаптивность
+****************************
+***************************/
+@keyframes modalBackground-open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes modalBackground-close {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+
+.modalBackground
+{
+    display:none;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(0,0,0, 0.5);
+    align-items: center;
+}
+
+.modalBackground_show {
+    animation:modalBackground-open.5s ;
+    display: flex;
+}
+
+
+.modalBackground_close-starting {
+    animation:modalBackground-close.5s ;
+}
+
+
+
+
+.modalWindow {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    background-color: rgba(48, 54, 58, 1);
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0px 3px 11px 3px #000000bd;
+    color: #e1d9d9;
+    border: solid;
+}
+
+.modalEl {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mb-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn-modal {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    border:solid;
+    border-width: 1px;
+    border-color:#c78e66;
+    transition: transform.3s ;
+    color: #e1d9d9;
+    font-size: 17px;
+    background-color:  rgba(48, 54, 58, 1);
+    width: 140px;
+    height: 30px;
+    font-weight: 400;
+}
+
+
+.btn-modal:hover {
+    background-color: #c78e66;
+    font-size: 18px;
+
+    border-width: 1px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+}
+
+#modalTitle {
+    color: white;
+}
+/***************************
+****************************
+Адаптивность
+****************************
+***************************/
+
+@media only screen and (max-width: 1903px) {
+    .map {
+        display: none;
+    }
+    .three-colum {
+        margin-left: 450px;
+    }
+
+    .main {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 1762px) {
+    .logo-right {
+        font-size: 15px;
+    }
+    .three-colum {
+        margin-left: 400px;
+    }
+
+    .main {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 1632px) {
+    .logo-right {
+        font-size: 10px;
+    }
+    .three-colum {
+        margin-left: 300px;
+    }
+    .second-colum {
+        flex-direction: column;
+    }
+    .main {
+        font-size: 16px;
+    }
+    .four-colum {
+        margin-left:0px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 1468px) {
+    .logo-right {
+        font-size: 10px;
+    }
+    .three-colum {
+        margin-left: 500px;
+    }
+    .second-colum {
+        flex-direction: column;
+    }
+    .main {
+        font-size: 15px;
+    }
+    .four-colum {
+        margin-left:0px;
+    }
+
+
+    .btn-main {
+        font-size: 10px;
+    }
+    .btn-main:hover {
+        font-size: 10px;
+    }
+    .spaceJ{
+        border:none;
+    }
+    h5{
+        font-size: 12px;
+    }
+
+
+    .twoModel12 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    .row5 {
+        width: 100%;
+    }
+    .row8 {
+        width: 100%;
+    }
+    .row9 {
+        display: contents;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1375px) {
+
+    .three-colum {
+        margin-left: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 1287px) {
+
+    .three-colum {
+        margin-left: 350px;
+    }
+
+}
+
+
+
+
+    @media only screen and (max-width: 1268px) {
+    .btn2 {
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .testDrive {
+        font-size: 50px;
+    }
+    .row {
+        font-size: 70px;
+    }
+    .row1 {
+        font-size: 18px;
+    }
+
+    .carImg1 {
+        width: 500px;
+    }
+    .carImg {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .three-colum {
+        margin-left: 300px;
+    }
+
+@media only screen and (max-width: 1168px) {
+    .three-colum {
+        margin-left: 250px;
+    }
+
+    @media only screen and (max-width: 1150px) {
+        .three-colum {
+            margin-left: 100px;
+        }
+
+        .btn2 {
+            width: 199px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .btn2:hover {
+            font-size: 21px;
+        }
+
+        .testDrive {
+            font-size: 40px;
+        }
+        .row1{
+            font-size: 16px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1136px) {
+        .three-colum {
+            margin-left: 200px;
+        }
+
+
+            @media only screen and (max-width: 1080px) {
+        .twoModel {
+            flex-direction: column;
+        }
+    }
+
+
+     @media only screen and (max-width: 1076px) {
+        .three-colum {
+            margin-left: 150px;
+        }
+     }
+
+    @media only screen and (max-width: 1024px) {
+            .three-colum {
+            margin-left: 100px;
+            }
+    }
+
+
+                @media screen and (max-width: 960px) {
+
+
+        .logo-right {
+            font-size: 10px;
+        }
+
+        .second-colum {
+            display: none;
+        }
+
+        .three-colum {
+            margin-left: 10px;
+        }
+
+        .second-colum {
+            flex-direction: column;
+        }
+
+        .main {
+            font-size: 10px;
+        }
+
+        .four-colum {
+            margin-left: 0px;
+        }
+
+        .twoModel {
+            flex-direction: column;
+        }
+
+        .btn-main {
+            font-size: 7px;
+        }
+        .btn-main:hover {
+            font-size: 7px;
+        }
+
+        .spaceJ {
+            border: none;
+        }
+
+        h5 {
+            font-size: 9px;
+        }
+
+        .carImg1 {
+            width: 300px;
+            height: 141px;
+        }
+
+        .carImg {
+            width: 300px;
+            height: 141px;
+        }
+
+        .row {
+            font-size: 20px;
+        }
+
+        .row1 {
+            font-size: 15px;
+        }
+        .containerWithiTwoRow {
+            flex-direction: column;
+        }
+        .columCAR{
+            width: 100%;
+        }
+        .columCAR2 {
+            width: 100%;
+            padding: 70px;
+        }
+        #left_Carcolumn {
+            padding: 70px;
+        }
+        .testDrive {
+            font-size: 40px;
+            color:#cbd5e0;
+        }
+        .carImg1 {
+            width: 400px;
+            height: 200px;
+        }
+        .carImg {
+            width: 400px;
+            height: 200px;
+        }
+        .p7 {
+            font-size: 17px;
+        }
+        ul{
+            font-size: 12px;
+        }
+        .navbar {
+        display: flex
+        }
+        .main {
+        display: none
+        }
+    }
+
+@media screen and (max-width: 655px) {
+    .btnICon {
+        font-size: 15px;
+        color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 648px) {
+    .testDrive {
+        flex-direction: column;
+    }
+    .main {
+        display: none
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .columnMiniMain {
+        display: none;
+    }
+    .main {
+        display: none
+    }
+
+
+}
+
+@media screen and (max-width: 595px) {
+
+
+    .btn{font-family: 'Montserrat', sans-serif;
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .btn:hover {
+        font-size: 14px;
+    }
+
+
+    li {
+        font-size: 12px;
+    }
+    #li2 {
+        font-size: 12px;
+    }
+    .p7{
+        font-size: 12px;
+    }
+    .three-colum {
+        margin-left: 0px;
+    }
+
+    .titleCard {
+        font-size: 30px;
+    }
+    .miniTitleCard {
+        font-size: 20px;
+    }
+    #miniTitle {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .four-colum {
+        display: none;
+    }
+    .mainModel {
+        margin-left: 15px;
+    }
+
+    #left_Carcolumn {
+        padding: 10px;
+    }
+
+
+    .btn2 {
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .btn2:hover {
+        font-size: 15px;
+    }
+    .main {
+        display: none;
+        width: 100%;
+        height: 90px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 489px) {
+    .newsCard {
+        height: 100px;
+    }
+
+    .pCard {
+        font-size: 10px;
+    }
+
+    #Title {
+        font-size: 25px;
+    }
+
+    .mapName {
+        font-size: 20px;
+    }
+
+    .footer1 {
+        height: 50px;
+    }
+
+    .mini1 {
+
+        padding: 5px;
+    }
+
+    .main {
+        display: none
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+}
+.footerLi{
+    font-size: 8px;
+}
+.spaceJ-footer{
+    display: none;
+}
+
+
+@media screen and (max-width: 365px) {
+
+#footerRightWords {
+    display: none;
+}
+.main {
+    flex-direction:column;
+    height: 80px;
+}
+.main_margin {
+    margin-left: 0px;
+}
+.logo-right {
+    margin-left: 0px;
+    margin-top:5px;
+    font-size:12px;
+}
+.first-colum {
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.carImg1 {
+    width: 250px;
+}
+.carImg {
+    width: 250px;
+}
+
+.twoROW {
+    flex-direction: column;
+}
+.inColum1 {
+    margin-left:0px;
+    margin-bottom: 30px;
+}
+.inColum {
+    margin-bottom: 30px;
+}
+#left_Carcolumn {
+
+}
+.columCAR2 {
+    padding: 0px;
+    background-size: inherit;
+}
+
+#li2 {
+    margin-top: 20px;
+}
+
+.miniTitleCard {
+    font-size: 15px;
+}
+
+
+.testDrive {
+    font-size: 25px;
+    color: white;
+}
+
+#miniTitle {
+    font-size: 15px;
+}
+.row1 {
+     font-size: 12px;
+}
+
+.carImg1 {
+      width: 350px;
+
+}
+.carImg {
+     width: 350px;
+
+ }
+}
+
+@media screen and (max-width: 315px) {
+
+    .testDrive {
+        font-size: 18px;
+        color: white;
+    }
+    #Title {
+        font-size: 18px;
+    }
+
+    .miniTitleCard {
+        font-size: 12px;
+    }
+
+    .carImg {
+        width: 200px;
+    }
+
+    .carImg1 {
+        width: 200px;
+    }
+
+    .titleCard {
+        font-size: 20px;
+    }
+
+    .p7 {
+        font-size: 10px;
+    }
+
+    li {
+        font-size: 9px;
+    }
+
+    .columnMiniMain {
+
+        font-size: 12px;
+    }
+}

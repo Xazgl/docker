@@ -1,0 +1,31 @@
+.Back{
+    display:flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(0,0,0, 0.5);
+    align-items: center;
+}
+
+.formReg {
+    display:flex;
+    flex-direction: column;
+}
+
+.mb-3{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-modal{
+background: black;
+color: wheat;
+}
+
+.btn-modal:hover{
+    background: black;
+    color: wheat;
+    transform: scale(1.1);
+    }

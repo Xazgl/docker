@@ -1,0 +1,11 @@
+POST http://localhost:3000/reg
+Content-Type: application/json
+
+{"login":"John1","pass":"A273149"}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{"login":"John1","pass":"A273149"}

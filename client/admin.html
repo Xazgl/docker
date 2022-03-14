@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style/back.css" rel="stylesheet">
+
+    <title>Apkont Exeed Admin</title>
+</head>
+
+<body>
+    <div class="Back">
+
+        <form class="formReg" id="formLogin" action="/login">
+            <div class="mb-3" id="inputForm">
+                <label for="login" class="form-label"></label>
+                <input type="text" class="login" id="login" name="login" placeholder="Login" required>
+            </div>
+            <div class="mb-3" id="inputForm">
+                <label for="pass" class="form-label"></label>
+                <input type="text" class="pass" id="pass" name="pass" placeholder="Пароль" required>
+            </div>
+
+            <div class="mb-3" id="inputForm">
+                <button class="btn-modal" type="submit">Войти</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+<script>
+    function $(selector) {
+        return document.querySelector(selector) // $ заместо document.querySelector(selector)
+    }
+
+    const formRequestLogin = $('#formLogin')
+    formRequestLogin.onsubmit = async function (event) {
+        event.preventDefault() //убираем отправку изначальную на кнопку
+        const login = formRequestLogin[0].value
+        const pass = formRequestLogin[1].value
+        try {
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ login, pass })
+            })
+            if (res.ok) {
+                const json = await res.json()
+                localStorage.setItem('Token', json.token)
+                console.log('Success')
+                location.replace('/clients.html') 
+            }
+        } catch {
+            res.status(500).send({ message: "Ошибка сервера" })
+        }
+    }
+</script>

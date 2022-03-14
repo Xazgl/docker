@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style/clients.css" rel="stylesheet">
+    <title>Clients</title>
+</head>
+<body>
+    <div class="contBtn">
+      <button id="logout">Выйти</button>
+    </div>
+
+    <ul id="clients-el">
+
+    </ul>
+
+    <table  class="table" id="table" >
+            <thead> 
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">ФИО</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Дата обращения</th>
+              </tr>
+        <thead>
+        <tbody>
+         
+
+        </tbody >
+      </table>
+
+
+
+    <script>
+        /*
+        const logout = document.getElementById('logout')
+        logout.onclick = function () {
+            localStorage.removeItem('Token')
+            location.replace('/admin.html') 
+        }
+        const clientsEl = document.getElementById('clients-el')
+        async function start() {
+            const res = await fetch('/clients', {
+                headers: {
+                    'Authorization': 'bearer ' + localStorage.getItem('Token')
+                }
+            })
+            if (res.ok) {
+                const clients = await res.json()
+                const html = clients.reduce((acc, cur) => {
+                    return acc + `<li>${cur.name}: ${cur.phone}</li>`
+                }, '')
+                clientsEl.innerHTML = html
+            } else {
+                clientsEl.textContent = res.statusText
+            }
+
+        }
+        start()*/
+
+        const logout = document.getElementById('logout')
+        logout.onclick = function () {
+            localStorage.removeItem('Token')
+            location.replace('/admin.html') 
+        }
+
+
+        const table = document.getElementById('table')
+
+        async function start() {
+            const res = await fetch('/clients', {
+                headers: {
+                    'Authorization': 'bearer ' + localStorage.getItem('Token')
+                }
+            })
+            if (res.ok) {
+                const clients = await res.json()
+                for(let i = 0; i < clients.length; i++) {  //перебираем значения массива
+                    const row = document.createElement('tr');//создаем строку 
+                    row.innerHTML = 
+                    `<th scope="row">${i+1}</th>
+                     <td>${clients[i].name}</td>       
+                     <td>${clients[i].phone}</td>
+                     <td>${clients[i].createdAt}</td>`
+                     table.appendChild(row)
+                }
+            } else {
+                table.textContent = res.statusText
+            }
+
+        }
+        start()
+
+       
+
+
+    </script>
+</body>
+</html>
